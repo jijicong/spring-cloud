@@ -6,6 +6,7 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/scm-eureka/pom.xml" />
         <option value="$PROJECT_DIR$/../scm-cloud/scm-purchase/pom.xml" />
+        <option value="$PROJECT_DIR$/../scm-cloud/scm-common/pom.xml" />
       </list>
     </option>
   </component>

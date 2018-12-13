@@ -19,6 +19,8 @@
 
     <modules>
         <module>scm-eureka</module>
+        <module>scm-purchase</module>
+        <module>scm-common</module>
     </modules>
 
 </project>

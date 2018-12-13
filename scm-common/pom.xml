@@ -8,10 +8,10 @@
 		<version>1.0-SNAPSHOT</version>
 	</parent>
 	<groupId>org.trc</groupId>
-	<artifactId>scm-purchase</artifactId>
+	<artifactId>scm-common</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>scm-purchase</name>
-	<description>purchase</description>
+	<name>scm-common</name>
+	<description>common</description>
 
 	<dependencies>
 		<dependency>
