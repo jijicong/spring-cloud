@@ -3,7 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/scm-cloud.iml" filepath="$PROJECT_DIR$/scm-cloud.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../scm-cloud/scm-eureka/scm-eureka.iml" filepath="$PROJECT_DIR$/../scm-cloud/scm-eureka/scm-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scm-eureka/scm-eureka.iml" filepath="$PROJECT_DIR$/scm-eureka/scm-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../scm-cloud/scm-purchase/scm-purchase.iml" filepath="$PROJECT_DIR$/../scm-cloud/scm-purchase/scm-purchase.iml" />
     </modules>
   </component>
 </project>

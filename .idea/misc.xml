@@ -3,8 +3,9 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/../scm-cloud/pom.xml" />
-        <option value="$PROJECT_DIR$/../scm-cloud/scm-eureka/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/scm-eureka/pom.xml" />
+        <option value="$PROJECT_DIR$/../scm-cloud/scm-purchase/pom.xml" />
       </list>
     </option>
   </component>
