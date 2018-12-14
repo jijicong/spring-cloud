@@ -2,22 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e73086a-680a-4dcf-9807-39e355530aa2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../scm-cloud/.gitignore" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../scm-cloud/.idea/codeStyles/Project.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../scm-cloud/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../scm-cloud/pom.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../scm-cloud/scm-common/pom.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../scm-cloud/scm-common/src/main/java/org/trc/scm/common/ScmCommonApplication.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../scm-cloud/scm-common/src/main/resources/application.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../scm-cloud/scm-common/src/test/java/org/trc/scm/common/ScmCommonApplicationTests.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../scm-cloud/scm-eureka/pom.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../scm-cloud/scm-eureka/src/main/java/org/trc/scm/eureka/ScmEurekaApplication.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../scm-cloud/scm-eureka/src/main/resources/application.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../scm-cloud/scm-eureka/src/main/resources/logback-spring.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../scm-cloud/scm-purchase/pom.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../scm-cloud/scm-purchase/src/main/java/org/trc/scm/purchase/ScmPurchaseApplication.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../scm-cloud/scm-purchase/src/main/resources/application.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../scm-cloud/scm-purchase/src/test/java/org/trc/scm/purchase/ScmPurchaseApplicationTests.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../scm-cloud/.idea/compiler.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../scm-cloud/.idea/modules.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../scm-cloud/.idea/workspace.xml" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -310,7 +297,7 @@
       <workItem from="1544613975644" duration="14032000" />
       <workItem from="1544691103893" duration="2000000" />
       <workItem from="1544693306501" duration="107000" />
-      <workItem from="1544693422061" duration="2019000" />
+      <workItem from="1544693422061" duration="2058000" />
     </task>
     <task id="LOCAL-00001" summary="common">
       <created>1544689760705</created>
@@ -333,11 +320,18 @@
       <option name="project" value="LOCAL" />
       <updated>1544693505434</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Merge branch 'master' of rep.360taihe.com:scm-group/scm-purchase-cloud&#10;&#10;# Conflicts:&#10;#&#9;.idea/codeStyles/Project.xml">
+      <created>1544749955457</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1544749955457</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25049000" />
+    <option name="totallyTimeSpent" value="25088000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="22" width="1936" height="1066" extended-state="6" />
