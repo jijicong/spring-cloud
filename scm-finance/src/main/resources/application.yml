@@ -1,9 +1,9 @@
 spring:
   application:
-    name: purchase
+    name: finance
 
 server:
-  port: 8767
+  port: 8790
 
 eureka:
   client:
