@@ -8,26 +8,15 @@
 		<version>1.0-SNAPSHOT</version>
 	</parent>
 	<groupId>org.trc</groupId>
-	<artifactId>scm-purchase</artifactId>
+	<artifactId>scm-config</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>scm-purchase</name>
-	<description>purchase</description>
+	<name>scm-config</name>
+	<description>config</description>
 
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-eureka</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-openfeign</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
+			<artifactId>spring-cloud-config-server</artifactId>
 		</dependency>
 	</dependencies>
 
