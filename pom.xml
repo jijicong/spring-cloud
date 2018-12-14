@@ -21,6 +21,7 @@
         <module>scm-eureka</module>
         <module>scm-purchase</module>
         <module>scm-common</module>
+        <module>scm-finance</module>
     </modules>
 
 </project>

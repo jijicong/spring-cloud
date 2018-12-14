@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: purchase
+
+server:
+  port: 8767
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8000/eureka/
