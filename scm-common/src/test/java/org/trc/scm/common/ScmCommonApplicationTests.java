@@ -5,13 +5,15 @@ import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+/**
+ * Created by hzcyn on 2018/12/15.
+ */
+
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class ScmCommonApplicationTests {
 
-	@Test
-	public void contextLoads() {
-	}
-
+    @Test
+    public void contextLoads() {
+    }
 }
-
