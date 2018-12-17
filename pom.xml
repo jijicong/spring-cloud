@@ -24,6 +24,7 @@
         <module>scm-finance</module>
         <module>scm-config</module>
         <module>scm-core</module>
+        <module>scm-generator</module>
     </modules>
 
     <properties>
