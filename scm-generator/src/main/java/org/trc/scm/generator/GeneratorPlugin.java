@@ -23,6 +23,12 @@ public class GeneratorPlugin {
         boolean overwrite = true;
         ConfigurationParser cp = new ConfigurationParser(warnings);
         Configuration config = cp.parseConfiguration(getResourceAsStream("generatorConfig.xml"));
+        config.getContexts().get(0).getJavaModelGeneratorConfiguration().setTargetProject(System.getProperty("user.dir") +
+                config.getContexts().get(0).getJavaModelGeneratorConfiguration().getTargetProject());
+        config.getContexts().get(0).getSqlMapGeneratorConfiguration().setTargetProject(System.getProperty("user.dir") +
+                config.getContexts().get(0).getSqlMapGeneratorConfiguration().getTargetProject());
+        config.getContexts().get(0).getJavaClientGeneratorConfiguration().setTargetProject(System.getProperty("user.dir") +
+                config.getContexts().get(0).getJavaClientGeneratorConfiguration().getTargetProject());
         DefaultShellCallback callback = new DefaultShellCallback(overwrite);
         MyBatisGenerator myBatisGenerator = new MyBatisGenerator(config, callback, warnings);
         myBatisGenerator.generate(null);

@@ -2,18 +2,19 @@ mapper:
   mappers: org.trc.scm.core.mybatis.BaseMapper
   not-empty: true
   identity: MYSQL
+  style: camelhump
+  safeDelete: true
+  safeUpdate: true
 
 mybatis:
-  type-aliases-package: com.paascloud.provider.model.domain
+  type-aliases-package: org.trc.scm.purchase.model.domain
   mapper-locations: classpath:mapper/*.xml
   configuration:
     map-underscore-to-camel-case: true
 
 spring:
-  mvc:
-    date-format: yyyy-MM-dd HH:mm:ss
-  jackson:
-    joda-date-time-format: yyyy-MM-dd HH:mm:ss
-    date-format: yyyy-MM-dd HH:mm:ss
   datasource:
+    driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://10.200.131.78:3306/scm2?characterEncoding=utf8&serverTimezone=UTC&allowMultiQueries=true&zeroDateTimeBehavior=convertToNull&useAffectedRows=true
+    username: root
+    password: 20170104lws

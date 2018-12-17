@@ -8,6 +8,7 @@ import org.springframework.cloud.netflix.feign.EnableFeignClients;
 @EnableDiscoveryClient
 @SpringBootApplication
 @EnableFeignClients
+@tk.mybatis.spring.annotation.MapperScan(basePackages = "org.trc.scm.purchase.dao")
 public class ScmPurchaseApplication {
 
 	public static void main(String[] args) {
