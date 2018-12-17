@@ -2,7 +2,8 @@ package org.trc.scm.core.mybatis;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import io.swagger.annotations.ApiModelProperty;
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.trc.scm.core.utils.DateUtils;
 
@@ -16,7 +17,8 @@ import java.util.Date;
 /**
  * Created by hzcyn on 2018/12/15.
  */
-@Data
+@Setter
+@Getter
 public class BaseEntity implements Serializable {
 
     private static final long serialVersionUID = 2393269568666085258L;
