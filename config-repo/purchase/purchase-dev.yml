@@ -1,7 +1,4 @@
-name:
-  chenyn: chenyn
-
-gender:
-  gag: 男
-  asasd:
-    sada1: asdas12
+mapper:
+  mappers: org.trc.scm.core.mybatis.BaseMapper
+  not-empty: true
+  identity: MYSQL
