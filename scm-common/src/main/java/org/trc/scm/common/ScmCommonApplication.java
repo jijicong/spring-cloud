@@ -11,7 +11,8 @@ import org.springframework.cloud.netflix.feign.EnableFeignClients;
 
 @EnableDiscoveryClient
 @SpringBootApplication
-@EnableFeignClients
+@EnableFeignClients(basePackages = "org.trc.scm.provider")
+@tk.mybatis.spring.annotation.MapperScan(basePackages = "org.trc.scm.common.dao")
 public class ScmCommonApplication {
 
     public static void main(String[] args) {

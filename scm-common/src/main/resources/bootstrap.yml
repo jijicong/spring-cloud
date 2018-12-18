@@ -1,10 +1,10 @@
 spring:
   application:
-    name: purchase
+    name: common
   cloud:
     config:
       fail-fast: true
-      name: purchase
+      name: common
       profile: ${spring.profiles.active}
       label: master
       discovery:
@@ -14,7 +14,7 @@ spring:
       password: admin
 
 server:
-  port: 9000
+  port: 9001
 
 eureka:
   client:
