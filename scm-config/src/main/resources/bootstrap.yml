@@ -9,7 +9,7 @@ spring:
       server:
         git:
           uri: https://rep.360taihe.com/scm-group/scm-purchase-cloud.git
-          search-paths: /*/*
+          search-paths: /config-repo/*
           username: hzcyn
           password: hzcyn233
 
