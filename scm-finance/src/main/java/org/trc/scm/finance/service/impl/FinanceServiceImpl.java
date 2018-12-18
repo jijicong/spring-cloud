@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.trc.scm.core.support.BaseService;
 import org.trc.scm.finance.dao.ISkusMapper;
-import org.trc.scm.finance.entity.Skus;
+import org.trc.scm.finance.domain.Skus;
 import org.trc.scm.finance.service.FinanceService;
 import tk.mybatis.mapper.entity.Example;
 

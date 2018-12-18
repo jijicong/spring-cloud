@@ -1,4 +1,4 @@
-package org.trc.scm.finance.entity;
+package org.trc.scm.finance.domain;
 
 
 import io.swagger.annotations.ApiParam;

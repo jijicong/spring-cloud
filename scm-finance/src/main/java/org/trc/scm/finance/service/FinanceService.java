@@ -1,7 +1,7 @@
 package org.trc.scm.finance.service;
 
 import org.trc.scm.core.support.IBaseService;
-import org.trc.scm.finance.entity.Skus;
+import org.trc.scm.finance.domain.Skus;
 
 /**
  * @Auther: hzluoxingcheng

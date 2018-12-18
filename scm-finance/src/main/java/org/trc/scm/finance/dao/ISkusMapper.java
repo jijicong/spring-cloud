@@ -2,7 +2,7 @@ package org.trc.scm.finance.dao;
 
 import org.apache.ibatis.annotations.Param;
 import org.trc.scm.core.mybatis.BaseMapper;
-import org.trc.scm.finance.entity.Skus;
+import org.trc.scm.finance.domain.Skus;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
