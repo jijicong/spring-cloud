@@ -17,13 +17,13 @@ import tk.mybatis.mapper.entity.Example;
 public class FinanceServiceImpl extends BaseService<Skus,Long> implements FinanceService {
 
     @Autowired
-    private ISkusMapper skusMapper;
+    private ISkusMapper iskusMapper;
 
     @Override
     public Long getCountBySkuDemo(String skuCode) {
         Example example = new Example(Skus.class);
         Example.Criteria criteria = example.createCriteria();
         criteria.andEqualTo("skuCode",skuCode);
-        return (long)skusMapper.selectCountByExample(example);
+        return (long)iskusMapper.selectCountByExample(example);
     }
 }

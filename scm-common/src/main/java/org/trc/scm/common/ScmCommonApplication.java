@@ -11,10 +11,10 @@ import org.springframework.context.annotation.ComponentScan;
  */
 
 @EnableDiscoveryClient
-@SpringBootApplication
 @EnableFeignClients(basePackages = "org.trc.scm.provider")
 @ComponentScan(basePackages = {"org.trc.scm.common","org.trc.scm.provider"})
 @tk.mybatis.spring.annotation.MapperScan(basePackages = "org.trc.scm.common.dao")
+@SpringBootApplication
 public class ScmCommonApplication {
 
     public static void main(String[] args) {
