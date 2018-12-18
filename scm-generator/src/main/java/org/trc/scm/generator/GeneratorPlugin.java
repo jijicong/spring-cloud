@@ -5,7 +5,8 @@ import org.mybatis.generator.config.Configuration;
 import org.mybatis.generator.config.xml.ConfigurationParser;
 import org.mybatis.generator.internal.DefaultShellCallback;
 
-import java.io.InputStream;
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,20 +15,20 @@ import java.util.List;
  */
 public class GeneratorPlugin {
 
-    public static InputStream getResourceAsStream(String path){
-        return Thread.currentThread().getContextClassLoader().getResourceAsStream(path);
+    private static String getPath() throws IOException{
+        return new File("").getCanonicalPath();
     }
 
     public static void main(String[] args) throws Exception {
         List<String> warnings = new ArrayList<>();
         boolean overwrite = true;
         ConfigurationParser cp = new ConfigurationParser(warnings);
-        Configuration config = cp.parseConfiguration(getResourceAsStream("generatorConfig.xml"));
-        config.getContexts().get(0).getJavaModelGeneratorConfiguration().setTargetProject(System.getProperty("user.dir") +
+        Configuration config = cp.parseConfiguration(Thread.currentThread().getContextClassLoader().getResourceAsStream("generatorConfig.xml"));
+        config.getContexts().get(0).getJavaModelGeneratorConfiguration().setTargetProject(getPath() +
                 config.getContexts().get(0).getJavaModelGeneratorConfiguration().getTargetProject());
-        config.getContexts().get(0).getSqlMapGeneratorConfiguration().setTargetProject(System.getProperty("user.dir") +
+        config.getContexts().get(0).getSqlMapGeneratorConfiguration().setTargetProject(getPath() +
                 config.getContexts().get(0).getSqlMapGeneratorConfiguration().getTargetProject());
-        config.getContexts().get(0).getJavaClientGeneratorConfiguration().setTargetProject(System.getProperty("user.dir") +
+        config.getContexts().get(0).getJavaClientGeneratorConfiguration().setTargetProject(getPath() +
                 config.getContexts().get(0).getJavaClientGeneratorConfiguration().getTargetProject());
         DefaultShellCallback callback = new DefaultShellCallback(overwrite);
         MyBatisGenerator myBatisGenerator = new MyBatisGenerator(config, callback, warnings);
