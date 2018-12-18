@@ -27,6 +27,12 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>org.trc</groupId>
+			<artifactId>scm-core</artifactId>
+		</dependency>
+
 	</dependencies>
 
 	<build>
