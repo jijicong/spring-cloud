@@ -11,7 +11,7 @@ import org.trc.scm.finance.entity.Skus;
 public interface FinanceService extends IBaseService<Skus,Long> {
 
 
-    public String getCountBySkuDemo(String skuCode);
+    public Long getCountBySkuDemo(String skuCode);
 
 
 

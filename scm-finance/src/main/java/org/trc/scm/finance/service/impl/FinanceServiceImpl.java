@@ -1,6 +1,8 @@
 package org.trc.scm.finance.service.impl;
 
 import org.springframework.stereotype.Service;
+import org.trc.scm.core.support.BaseService;
+import org.trc.scm.finance.entity.Skus;
 import org.trc.scm.finance.service.FinanceService;
 
 /**
@@ -9,11 +11,10 @@ import org.trc.scm.finance.service.FinanceService;
  * @Description: 核心业务层， 可以抽离的公共业务
  */
 @Service
-public class FinanceServiceImpl  implements FinanceService {
-
+public class FinanceServiceImpl extends BaseService<Skus,Long> implements FinanceService {
 
     @Override
-    public String getCountBySkuDemo(String skuCode) {
+    public Long getCountBySkuDemo(String skuCode) {
         return null;
     }
 }

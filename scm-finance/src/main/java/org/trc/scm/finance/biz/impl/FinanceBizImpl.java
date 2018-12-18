@@ -17,7 +17,7 @@ public class FinanceBizImpl  implements FinanceBiz {
     private FinanceService financeService;
 
     @Override
-    public String getCountBySkuDemo(String skuCode) {
+    public Long getCountBySkuDemo(String skuCode) {
         return financeService.getCountBySkuDemo(skuCode);
     }
 }
