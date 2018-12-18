@@ -26,6 +26,7 @@
         <module>scm-core</module>
         <module>scm-generator</module>
         <module>scm-provider</module>
+        <module>scm-gateway</module>
     </modules>
 
     <properties>
