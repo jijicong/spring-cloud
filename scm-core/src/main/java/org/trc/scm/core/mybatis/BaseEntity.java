@@ -50,5 +50,5 @@ public class BaseEntity implements Serializable {
 
     @Column(name = "is_deleted")
     @ApiModelProperty("记录是否删除")
-    private Integer isDeleted;
+    private Byte isDeleted;
 }

@@ -30,7 +30,7 @@
         </javaModelGenerator>
 
         <sqlMapGenerator targetPackage="${target.xml.package}"
-                         targetProject="${target.java.project}"/>
+                         targetProject="${target.resources.project}"/>
 
         <javaClientGenerator targetPackage="${target.mapper.package}"
                              targetProject="${target.java.project}"
