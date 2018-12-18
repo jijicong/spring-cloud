@@ -8,7 +8,7 @@ import org.trc.scm.provider.purchase.hystrix.PurchaseHystrix;
 /**
  * Created by hzcyn on 2018/12/18.
  */
-@FeignClient(name= "purchase")
+@FeignClient(name= "purchase", fallback = PurchaseHystrix.class)
 public interface PurchaseRemote {
 
     @RequestMapping(value = "/hello")

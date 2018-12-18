@@ -4,6 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.netflix.feign.EnableFeignClients;
+import org.springframework.context.annotation.ComponentScan;
 
 /**
  * Created by hzcyn on 2018/12/15.
@@ -12,6 +13,7 @@ import org.springframework.cloud.netflix.feign.EnableFeignClients;
 @EnableDiscoveryClient
 @SpringBootApplication
 @EnableFeignClients(basePackages = "org.trc.scm.provider")
+@ComponentScan(basePackages = {"org.trc.scm.common","org.trc.scm.provider"})
 @tk.mybatis.spring.annotation.MapperScan(basePackages = "org.trc.scm.common.dao")
 public class ScmCommonApplication {
 
