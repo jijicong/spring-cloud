@@ -40,6 +40,12 @@
 			<artifactId>scm-core</artifactId>
 		</dependency>
 
+		<dependency>
+			<groupId>org.trc</groupId>
+			<artifactId>scm-provider-purchase</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>

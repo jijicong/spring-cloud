@@ -76,14 +76,9 @@
             </dependency>
 
             <dependency>
-                <groupId>com.sun.jersey</groupId>
-                <artifactId>jersey-json</artifactId>
-                <exclusions>
-                    <exclusion>
-                        <artifactId>jsr311-api</artifactId>
-                        <groupId>javax.ws.rs</groupId>
-                    </exclusion>
-                </exclusions>
+                <groupId>org.trc</groupId>
+                <artifactId>scm-provider-purchase</artifactId>
+                <version>${scm.core.version}</version>
             </dependency>
 
         </dependencies>

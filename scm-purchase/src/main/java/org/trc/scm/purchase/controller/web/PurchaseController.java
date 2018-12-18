@@ -1,4 +1,4 @@
-package org.trc.scm.purchase.controller;
+package org.trc.scm.purchase.controller.web;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
