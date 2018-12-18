@@ -16,6 +16,7 @@
 
 	<modules>
 		<module>scm-provider-purchase</module>
+		<module>scm-provider-finance</module>
 	</modules>
 
 	<dependencies>
