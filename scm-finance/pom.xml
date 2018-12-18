@@ -35,19 +35,9 @@
 
 		<dependency>
 			<groupId>org.trc</groupId>
-			<artifactId>scm-provider</artifactId>
+			<artifactId>scm-provider-purchase</artifactId>
 		</dependency>
 
 	</dependencies>
-
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
-
 
 </project>
