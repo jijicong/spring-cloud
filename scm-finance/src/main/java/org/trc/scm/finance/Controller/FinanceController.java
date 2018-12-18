@@ -20,8 +20,8 @@ public class FinanceController {
     private FinanceBiz financeBiz;
 
     @GetMapping("/getCountBySkuDemo/{skuCode}")
-    public String getCountBySkuDemo(@PathVariable  String skuCode){
-       String ss = financeBiz.getCountBySkuDemo(skuCode);
+    public Long getCountBySkuDemo(@PathVariable  String skuCode){
+       Long ss = financeBiz.getCountBySkuDemo(skuCode);
         return ss;
 
     }

@@ -10,6 +10,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 public interface FinanceBiz {
 
 
-    public String getCountBySkuDemo(@PathVariable String skuCode);
+    public Long getCountBySkuDemo(@PathVariable String skuCode);
 
 }
