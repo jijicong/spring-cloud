@@ -1,9 +1,12 @@
 package org.trc.scm.finance.service.impl;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.trc.scm.core.support.BaseService;
+import org.trc.scm.finance.dao.ISkusMapper;
 import org.trc.scm.finance.entity.Skus;
 import org.trc.scm.finance.service.FinanceService;
+import tk.mybatis.mapper.entity.Example;
 
 /**
  * @Auther: hzluoxingcheng
@@ -13,8 +16,14 @@ import org.trc.scm.finance.service.FinanceService;
 @Service
 public class FinanceServiceImpl extends BaseService<Skus,Long> implements FinanceService {
 
+    @Autowired
+    private ISkusMapper skusMapper;
+
     @Override
     public Long getCountBySkuDemo(String skuCode) {
-        return null;
+        Example example = new Example(Skus.class);
+        Example.Criteria criteria = example.createCriteria();
+        criteria.andEqualTo("skuCode",skuCode);
+        return (long)skusMapper.selectCountByExample(example);
     }
 }
