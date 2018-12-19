@@ -12,6 +12,7 @@
     </parent>
 
     <groupId>org.trc</groupId>
+    <groupId>org.trc</groupId>
     <artifactId>scm-cloud</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
@@ -87,7 +88,6 @@
                 <artifactId>commons-lang3</artifactId>
                 <version>${commons-lang3.version}</version>
             </dependency>
-
         </dependencies>
     </dependencyManagement>
 
