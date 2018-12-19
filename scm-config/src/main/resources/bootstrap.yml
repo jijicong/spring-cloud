@@ -1,3 +1,25 @@
 spring:
+  application:
+    name: config
   profiles:
     active: dev
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://rep.360taihe.com/scm-group/scm-cloud.git
+          search-paths: /*/*
+          username: hzcyn
+          password: hzcyn233
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://registry:123456@localhost:8000/eureka/
+
+security:
+  basic:
+    enabled: false
+  user:
+    name: admin
+    password: admin
