@@ -3,6 +3,7 @@ package org.trc.scm.purchase.controller.api;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -27,7 +28,8 @@ public class PurchaseClient {
         return foo;
     }
 
-    public String hello(String name) {
-        return null;
+    @RequestMapping(value = "/hello")
+    public String hello(@RequestParam(value = "name") String name){
+        return name;
     }
 }

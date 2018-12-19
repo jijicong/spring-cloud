@@ -9,13 +9,9 @@ import org.springframework.cloud.netflix.feign.EnableFeignClients;
 import org.springframework.context.annotation.ComponentScan;
 
 @EnableDiscoveryClient
-//@EnableEurekaClient
-//@RefreshScope
 @SpringBootApplication
-//@EnableFeignClients(basePackages = "org.trc.scm")
-//@ComponentScan(basePackages = {"org.trc.scm.purchase","org.trc.scm.provider"})
+@EnableFeignClients
 @tk.mybatis.spring.annotation.MapperScan(basePackages = "org.trc.scm.purchase.dao")
-//@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
 public class ScmPurchaseApplication {
 
 	public static void main(String[] args) {
