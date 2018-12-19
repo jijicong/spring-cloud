@@ -18,3 +18,4 @@ spring:
     username: root
     password: 20170104lws
 
+foo: sdas
