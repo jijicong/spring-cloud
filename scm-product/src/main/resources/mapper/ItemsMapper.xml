@@ -28,4 +28,16 @@
     <result column="item_type" jdbcType="VARCHAR" property="itemType" />
     <result column="main_picture" jdbcType="LONGVARCHAR" property="mainPicture" />
   </resultMap>
+
+
+
+  <select id="getItemBySpuCode"  parameterType="java.lang.String"   resultType="org.trc.scm.product.model.domain.Items">
+      select  id ,spu_code ,name,category_id,brand_id,trade_type,item_no,weight,producer,
+               market_price,pictrue,remark,properties,is_valid,is_deleted,create_operator,create_time,update_time,is_quality,item_type,main_picture
+      from Items  where spu_code = #{spuCode}
+  </select>
+
+
+
+
 </mapper>
