@@ -18,4 +18,4 @@ spring:
     url: jdbc:mysql://10.200.131.78:3306/purchase?characterEncoding=utf8&serverTimezone=UTC&allowMultiQueries=true&zeroDateTimeBehavior=convertToNull&useAffectedRows=true
     username: root
     password: 20170104lws
-foo: xmn
+foo: xmn2
