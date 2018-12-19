@@ -4,14 +4,13 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.trc.scm.provider.purchase.remote.PurchaseRemote;
 
 /**
  * Created by hzcyn on 2018/12/18.
  */
 @Slf4j
 @RestController
-public class PurchaseClient implements PurchaseRemote {
+public class PurchaseClient {
 
     /*@Value("${mybatis.type-aliases-package}")
     private String mybatis;*/
@@ -28,7 +27,6 @@ public class PurchaseClient implements PurchaseRemote {
         return foo;
     }
 
-    @Override
     public String hello(String name) {
         return null;
     }

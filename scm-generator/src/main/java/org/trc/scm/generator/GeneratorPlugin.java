@@ -15,8 +15,9 @@ import java.util.List;
  */
 public class GeneratorPlugin {
 
-    private static String getPath() throws IOException{
-        return new File("").getCanonicalPath();
+    private static String getPath(){
+        return   GeneratorPlugin.class.getClassLoader().getResource("").getPath().substring(1,
+                GeneratorPlugin.class.getClassLoader().getResource("").getPath().lastIndexOf("/scm-generator"));
     }
 
     public static void main(String[] args) throws Exception {

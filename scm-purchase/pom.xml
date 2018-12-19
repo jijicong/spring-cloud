@@ -42,12 +42,7 @@
 
 		<dependency>
 			<groupId>org.trc</groupId>
-			<artifactId>scm-core</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>org.trc</groupId>
-			<artifactId>scm-provider-purchase</artifactId>
+			<artifactId>scm-common</artifactId>
 		</dependency>
 
 	</dependencies>

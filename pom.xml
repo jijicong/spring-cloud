@@ -19,14 +19,19 @@
 
     <modules>
         <module>scm-eureka</module>
-        <module>scm-purchase</module>
-        <module>scm-common</module>
-        <module>scm-finance</module>
         <module>scm-config</module>
-        <module>scm-core</module>
-        <module>scm-generator</module>
-        <module>scm-provider</module>
         <module>scm-gateway</module>
+        <module>scm-monitor</module>
+        <module>scm-auth</module>
+        <module>scm-common</module>
+        <module>scm-service</module>
+        <module>scm-product</module>
+        <module>scm-purchase</module>
+        <module>scm-wms</module>
+        <module>scm-inventory</module>
+        <module>scm-order</module>
+
+        <module>scm-generator</module>
     </modules>
 
     <properties>
@@ -42,6 +47,18 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
+                <groupId>org.trc</groupId>
+                <artifactId>scm-common</artifactId>
+                <version>${scm.core.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.trc</groupId>
+                <artifactId>scm-service</artifactId>
+                <version>${scm.core.version}</version>
+            </dependency>
+
+            <dependency>
                 <groupId>tk.mybatis</groupId>
                 <artifactId>mapper-spring-boot-starter</artifactId>
                 <version>${mapper-spring-boot-starter.version}</version>
@@ -51,12 +68,6 @@
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
                 <version>${mysql-connector-java.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.trc</groupId>
-                <artifactId>scm-core</artifactId>
-                <version>${scm.core.version}</version>
             </dependency>
 
             <dependency>
@@ -75,12 +86,6 @@
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-lang3</artifactId>
                 <version>${commons-lang3.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.trc</groupId>
-                <artifactId>scm-provider-purchase</artifactId>
-                <version>${scm.provider.version}</version>
             </dependency>
 
         </dependencies>
