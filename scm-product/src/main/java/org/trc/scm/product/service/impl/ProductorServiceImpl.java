@@ -33,6 +33,7 @@ public class ProductorServiceImpl  extends BaseService<Items, Long> implements P
 //        items.setSpuCode(spuCode);
 //        return this.selectOne(items);
 
+
         //通过核心层调用
         return productCore.getItemBySpuCode(spuCode);
 
