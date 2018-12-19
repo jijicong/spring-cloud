@@ -2,13 +2,15 @@ package org.trc.scm.product.remote;
 
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.trc.scm.common.support.HttpManager;
+import org.trc.scm.product.hystrix.PurchaseRemoteFactory;
 
 /**
  * @Auther: hzluoxingcheng
  * @Date: 2018/12/19 18:25
  * @Description:
  */
-@FeignClient(name="purchase")
+@FeignClient(name="purchase" ,fallbackFactory = PurchaseRemoteFactory.class ,configuration = HttpManager.class)
 public interface PurchaseRemote {
     
     /**
