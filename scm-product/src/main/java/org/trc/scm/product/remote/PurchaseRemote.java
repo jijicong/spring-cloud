@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public interface PurchaseRemote {
     
     /**
-     * @Description:Feign 调用 采购
+     * @Description:Feign 调用采购
      * @Author: hzluoxingcheng
      * @Date: 2018/12/19
      */ 
