@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: product
+  cloud:
+    config:
+      fail-fast: true
+      name: product
+      profile: ${spring.profiles.active}
+      label: master
+      discovery:
+        service-id: config
+        enabled: true
+      username: admin
+      password: admin
+  rabbitmq:
+    host: 10.200.131.93
+    port: 5672
+    username: scm
+    password: scmDEV999
+
+server:
+  port: 9100
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://registry:123456@localhost:8000/eureka/
+
+management:
+  security:
+    enabled: false #/bus/refresh刷新git配置的时候不校验授权
+
