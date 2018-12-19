@@ -10,7 +10,7 @@
         <property name="javaFileEncoding" value="UTF-8"/>
 
         <plugin type="tk.mybatis.mapper.generator.MapperPlugin">
-            <property name="mappers" value="org.trc.scm.core.mybatis.BaseMapper"/>
+            <property name="mappers" value="org.trc.scm.common.support.BaseMapper"/>
             <property name="caseSensitive" value="true"/>
             <property name="forceAnnotation" value="true"/>
             <property name="generateColumnConsts" value="true"/>
@@ -19,14 +19,14 @@
             <property name="lombok" value="Getter,Setter"/>
         </plugin>
 
-        <plugin type="org.trc.scm.generator.MyPlugin"/>
+        <plugin type="org.trc.scm.generator.basic.MyPlugin"/>
 
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
                         connectionURL="${jdbc.url}" userId="${jdbc.user}" password="${jdbc.password}">
         </jdbcConnection>
 
         <javaModelGenerator targetPackage="${target.model.package}" targetProject="${target.java.project}">
-            <property name="rootClass" value="org.trc.scm.core.mybatis.BaseEntity"/>
+            <property name="rootClass" value="org.trc.scm.common.support.BaseEntity"/>
         </javaModelGenerator>
 
         <sqlMapGenerator targetPackage="${target.xml.package}"

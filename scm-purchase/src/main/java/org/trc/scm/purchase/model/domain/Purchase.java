@@ -2,7 +2,7 @@ package org.trc.scm.purchase.model.domain;
 
 import lombok.Getter;
 import lombok.Setter;
-import org.trc.scm.core.mybatis.BaseEntity;
+import org.trc.scm.common.support.BaseEntity;
 
 import javax.persistence.Table;
 
