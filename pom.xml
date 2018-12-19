@@ -43,6 +43,8 @@
         <mapper-generator.version>1.1.1</mapper-generator.version>
         <commons-lang3.version>3.5</commons-lang3.version>
         <feign-httpclient.version>9.4.0</feign-httpclient.version>
+        <druid-spring-boot-starter.version>1.1.10</druid-spring-boot-starter.version>
+        <pagehelper-spring-boot-starter.version>1.2.3</pagehelper-spring-boot-starter.version>
     </properties>
 
     <dependencyManagement>
@@ -95,6 +97,17 @@
                 <version>${feign-httpclient.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid-spring-boot-starter</artifactId>
+                <version>${druid-spring-boot-starter.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.pagehelper</groupId>
+                <artifactId>pagehelper-spring-boot-starter</artifactId>
+                <version>${pagehelper-spring-boot-starter.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
