@@ -26,3 +26,7 @@ eureka:
     serviceUrl:
       defaultZone: http://registry:123456@localhost:8000/eureka/
 
+management:
+  security:
+    enabled: false #/bus/refresh刷新git配置的时候不校验授权
+
