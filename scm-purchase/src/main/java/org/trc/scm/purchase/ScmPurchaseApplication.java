@@ -12,10 +12,10 @@ import org.springframework.context.annotation.ComponentScan;
 //@EnableEurekaClient
 //@RefreshScope
 @SpringBootApplication
-@EnableFeignClients(basePackages = "org.trc.scm.provider")
-@ComponentScan(basePackages = {"org.trc.scm.purchase","org.trc.scm.provider"})
+//@EnableFeignClients(basePackages = "org.trc.scm")
+//@ComponentScan(basePackages = {"org.trc.scm.purchase","org.trc.scm.provider"})
 @tk.mybatis.spring.annotation.MapperScan(basePackages = "org.trc.scm.purchase.dao")
-@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
+//@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
 public class ScmPurchaseApplication {
 
 	public static void main(String[] args) {
