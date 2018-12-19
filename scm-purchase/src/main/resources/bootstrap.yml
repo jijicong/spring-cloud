@@ -26,5 +26,3 @@ eureka:
     serviceUrl:
       defaultZone: http://registry:123456@localhost:8000/eureka/
 
-
-

@@ -9,6 +9,8 @@ import org.springframework.cloud.netflix.feign.EnableFeignClients;
 import org.springframework.context.annotation.ComponentScan;
 
 @EnableDiscoveryClient
+//@EnableEurekaClient
+//@RefreshScope
 @SpringBootApplication
 @EnableFeignClients(basePackages = "org.trc.scm.provider")
 @ComponentScan(basePackages = {"org.trc.scm.purchase","org.trc.scm.provider"})
