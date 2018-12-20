@@ -48,14 +48,14 @@ public class HttpManager {
         httpClientBuilder.setDefaultRequestConfig(defaultRequestConfig);
         HttpClient client = httpClientBuilder.build();
 
+        //org.apache.commons.lang3.concurrent.BasicThreadFactory
         // 启动定时器，定时回收过期的连接
         ScheduledExecutorService executorService = new ScheduledThreadPoolExecutor(1,
                 new BasicThreadFactory.Builder().namingPattern("example-schedule-pool-%d").daemon(true).build());
-        executorService.scheduleAtFixedRate(new Runnable() {
-            @Override
-            public void run() {
+        executorService.scheduleAtFixedRate(()-> {
+                pollingConnectionManager.closeExpiredConnections();
+                pollingConnectionManager.closeIdleConnections(5, TimeUnit.SECONDS);
 
-            }
         },10 * 1000,5 * 1000, TimeUnit.HOURS);
         return client;
     }
