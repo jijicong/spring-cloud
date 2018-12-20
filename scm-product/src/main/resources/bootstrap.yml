@@ -12,11 +12,11 @@ spring:
         enabled: true
       username: admin
       password: admin
-  rabbitmq:
-    host: 10.200.131.93
-    port: 5672
-    username: scm
-    password: scmDEV999
+  #rabbitmq:
+   # host: 10.200.131.93
+   # port: 5672
+  #  username: scm
+  #  password: scmDEV999
 
 server:
   port: 9100

@@ -31,7 +31,7 @@ public class ProductApi {
     @GetMapping("/getItemBySpuCode")
     public Items getItemBySpuCode(String spuCode){
         System.out.println("开始远程调用");
-        //purchaseRemote.test();
+        purchaseRemote.test();
         System.out.println("结束远程调用");
        return  productorService.getItemBySpuCode(spuCode);
     }
