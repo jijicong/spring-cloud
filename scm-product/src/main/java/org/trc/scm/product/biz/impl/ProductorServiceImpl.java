@@ -1,12 +1,11 @@
-package org.trc.scm.product.service.impl;
+package org.trc.scm.product.biz.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.trc.scm.common.support.BaseService;
 import org.trc.scm.product.core.ProductCore;
-import org.trc.scm.product.dao.ItemsMapper;
 import org.trc.scm.product.model.domain.Items;
-import org.trc.scm.product.service.ProductorService;
+import org.trc.scm.product.biz.ProductorService;
 
 /**
  * @Auther: hzluoxingcheng
@@ -14,10 +13,8 @@ import org.trc.scm.product.service.ProductorService;
  * @Description:
  */
 @Service
-public class ProductorServiceImpl  extends BaseService<Items, Long> implements ProductorService {
+public class ProductorServiceImpl implements ProductorService {
 
-//    @Autowired
-//    private ItemsMapper itemsMapper;
 
     @Autowired
     private ProductCore productCore;
@@ -33,8 +30,7 @@ public class ProductorServiceImpl  extends BaseService<Items, Long> implements P
 //        items.setSpuCode(spuCode);
 //        return this.selectOne(items);
 
-
-        //通过核心层调用
+        //通过公共层调用
         return productCore.getItemBySpuCode(spuCode);
 
     }

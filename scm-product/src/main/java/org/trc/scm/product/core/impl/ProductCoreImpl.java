@@ -1,9 +1,10 @@
 package org.trc.scm.product.core.impl;
 
+import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.trc.scm.product.core.ProductCore;
-import org.trc.scm.product.dao.ItemsMapper;
+import org.trc.scm.product.dao.ItemsDao;
 import org.trc.scm.product.model.domain.Items;
 
 /**
@@ -15,11 +16,17 @@ import org.trc.scm.product.model.domain.Items;
 public class ProductCoreImpl  implements ProductCore {
 
     @Autowired
-    private ItemsMapper itemsMapper;
+    private ItemsDao itemsDao;
+
 
     @Override
     public Items getItemBySpuCode(String spuCode) {
-        return itemsMapper.getItemBySpuCode(spuCode);
+        EntityWrapper<Items> wrapper=new EntityWrapper<>();
+        wrapper.eq("spu_code",spuCode);
+        return itemsDao.selectOne(wrapper);
+
+       // return itemsMapper.getItemBySpuCode(spuCode);
+
     }
 
 

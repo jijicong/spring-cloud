@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.trc.scm.product.model.domain.Items;
 import org.trc.scm.product.remote.PurchaseRemote;
-import org.trc.scm.product.service.ProductorService;
+import org.trc.scm.product.biz.ProductorService;
 
 
 /**
@@ -31,7 +31,7 @@ public class ProductApi {
     @GetMapping("/getItemBySpuCode")
     public Items getItemBySpuCode(String spuCode){
         System.out.println("开始远程调用");
-        purchaseRemote.test();
+        //purchaseRemote.test();
         System.out.println("结束远程调用");
        return  productorService.getItemBySpuCode(spuCode);
     }

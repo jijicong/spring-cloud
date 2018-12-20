@@ -46,6 +46,33 @@
 			<artifactId>feign-httpclient</artifactId>
 		</dependency>
 
+		<dependency>
+			<groupId>com.baomidou</groupId>
+			<artifactId>mybatisplus-spring-boot-starter</artifactId>
+		</dependency>
+
+		<!--添加Dew JDBC支持-->
+		<dependency>
+			<groupId>com.tairanchina.csp.dew</groupId>
+			<artifactId>jdbc-starter</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.tairanchina.csp.dew</groupId>
+			<artifactId>cluster-spi-redis</artifactId>
+		</dependency>
+
+		<!--引入Dew封装的单元测试功能-->
+		<dependency>
+			<groupId>com.tairanchina.csp.dew</groupId>
+			<artifactId>test-starter</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+		</dependency>
+
 	</dependencies>
 
 </project>

@@ -1,4 +1,4 @@
-package org.trc.scm.product.service;
+package org.trc.scm.product.biz;
 
 import org.trc.scm.product.model.domain.Items;
 
