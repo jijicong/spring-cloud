@@ -14,7 +14,6 @@ public class PurchaseRemoteFactory  implements FallbackFactory<PurchaseRemote> {
 
     @Override
     public PurchaseRemote create(Throwable cause) {
-        System.out.println("错误信息:"+cause);
          return  new PurchaseFactoryRemote(){
              @Override
              public String test() {
