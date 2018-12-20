@@ -1,5 +1,6 @@
 package org.trc.scm.common.support;
 
+import org.apache.commons.lang3.concurrent.BasicThreadFactory;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.config.RequestConfig;
 import org.apache.http.impl.client.DefaultConnectionKeepAliveStrategy;
@@ -10,6 +11,8 @@ import org.springframework.context.annotation.Bean;
 
 import java.util.Timer;
 import java.util.TimerTask;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.ScheduledThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -46,14 +49,14 @@ public class HttpManager {
         HttpClient client = httpClientBuilder.build();
 
         // 启动定时器，定时回收过期的连接
-        Timer timer = new Timer();
-        timer.schedule(new TimerTask() {
+        ScheduledExecutorService executorService = new ScheduledThreadPoolExecutor(1,
+                new BasicThreadFactory.Builder().namingPattern("example-schedule-pool-%d").daemon(true).build());
+        executorService.scheduleAtFixedRate(new Runnable() {
             @Override
             public void run() {
-                pollingConnectionManager.closeExpiredConnections();
-                pollingConnectionManager.closeIdleConnections(5, TimeUnit.SECONDS);
+
             }
-        }, 10 * 1000, 5 * 1000);
+        },10 * 1000,5 * 1000, TimeUnit.HOURS);
         return client;
     }
 }
