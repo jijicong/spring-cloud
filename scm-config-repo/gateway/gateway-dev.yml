@@ -18,9 +18,9 @@ zuul:
 security:
   oauth2:
     client:
-      access-token-uri: http://gateway:8002/uaa/oauth/token
-      user-authorization-uri: http://gateway:8002/uaa/oauth/authorize
+      access-token-uri: http://localhost:8002/uaa/oauth/token
+      user-authorization-uri: http://localhost:8002/uaa/oauth/authorize
       client-id: client-gateway
     resource:
-      user-info-uri: http://auth:8003/uaa/user
+      user-info-uri: http://localhost:8003/uaa/user
       prefer-token-info: false
