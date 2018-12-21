@@ -1,7 +1,9 @@
 package org.trc.scm.purchase.service;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.trc.scm.common.support.BaseService;
+import org.trc.scm.purchase.dao.PurchaseMapper;
 import org.trc.scm.purchase.model.domain.Purchase;
 
 /**
@@ -9,4 +11,7 @@ import org.trc.scm.purchase.model.domain.Purchase;
  */
 @Service
 public class PurchaseService extends BaseService<Purchase, Long> {
+
+
+
 }

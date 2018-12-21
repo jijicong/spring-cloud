@@ -13,12 +13,11 @@ spring:
           username: hzcyn
           password: hzcyn233
       label: master
-
-  rabbitmq:
-      host: 10.200.131.93
-      port: 5672
-      username: scm
-      password: scmDEV999
+  #rabbitmq:
+  #   host: 10.200.131.93
+  #    port: 5672
+  #    username: scm
+  #    password: scmDEV999
 
 eureka:
   client:
@@ -32,8 +31,10 @@ security:
     name: admin
     password: admin
 
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*" #暴露/actuator/bus-refresh请求路径
+#management:
+#  security:
+#    enabled: false #/bus/refresh刷新git配置的时候不校验授权
+  #endpoints:
+  #  web:
+  #    exposure:
+  #      include: "*" #暴露/actuator/bus-refresh请求路径
