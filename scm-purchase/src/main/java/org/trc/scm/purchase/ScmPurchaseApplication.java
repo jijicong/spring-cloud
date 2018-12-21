@@ -2,14 +2,12 @@ package org.trc.scm.purchase;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.netflix.feign.EnableFeignClients;
 
 @EnableEurekaClient
 @SpringBootApplication
 @EnableFeignClients
-@RefreshScope
 @tk.mybatis.spring.annotation.MapperScan(basePackages = "org.trc.scm.purchase.dao")
 public class ScmPurchaseApplication {
 
